@@ -1,0 +1,56 @@
+body {
+
+    outline: none;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+
+}
+
+
+#container {
+
+    text-align: center;   
+    padding: 15px;
+    background-clip: padding-box;
+    margin-top: 95px;
+
+}     
+
+#container img {
+
+    color: white;
+    height: 320px;
+    width: 320px;  
+    border-radius: 25px;
+    border-color: white;
+
+}                                          
+
+.button {
+
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}        
+
+.button1 {
+
+    background-color: white; 
+    color: #992244; 
+    border: 2px solid #992244;
+
+}
+.button1:hover {
+
+    background-color: #992244;
+    color: white;
+
+}
