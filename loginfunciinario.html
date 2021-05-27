@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Login Funcionário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS\loginFuncionario.css" rel="stylesheet" type="text/css">
+        <style>
+            
+                    body{
+                        
+                        background-image: url(img/cachorro.jpg);
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover; 
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        
+                    }               
+            
+                </style> 
+        
+        <script>
+            function acesso(form) {
+
+                form.nome.value = form.nome.value.toLowerCase();
+                form.senha.value = form.senha.value.toLowerCase();
+
+
+                if (form.nome.value === "gustavo" && form.senha.value === "230812"
+                        || form.nome.value === "karen" && form.senha.value === "130597"
+                        || form.nome.value === "lorena" && form.senha.value === "101112") {
+                    location = "funcionario.html";
+                } else {
+                    form.nome.value = "";
+                    form.senha.value = "";
+                    alert("Dados Incorretos");
+                }
+            }
+        </script>
+
+    </head>
+    <body id="container">
+
+    <div id="container">
+        <div class="container" id="tamanho">
+            
+            <h1>Acesso Administrador</h1>
+        <img src="img/logo.png" alt="Dogueria"><br>
+        <form action="">
+            
+            
+            <div>
+                <input class="login user" type="text" name="nome" id="nome"
+                placeholder="Login" min="7" max="7" autocomplete="off" maxlength="14"
+                onkeyup="mascara_cpf()/"><br><br><br>
+                
+                <input class="login senha"  type="password" name="senha" id="senha"
+                placeholder="Senha" min="7" max="7" autocomplete="off" maxlength="14"
+                onkeyup="mascara_cpf()/"><br><br><br><br><br><br>
+            </div>
+            <div>
+                <input   class="button button1" name="botao" value="LOGIN" onclick="acesso(this.form)" href="funcionario.html"  type="button" >
+            </div>      
+        </form>
+        </div>   
+    </div>
+</body>
+</html>
